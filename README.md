@@ -1,4 +1,4 @@
-#Thirst Student App - Express.js Example
+# Thirst Student App - Express.js Example
 
 This project showcases a simple Express.js application using routers and EJS templates. It includes dynamic routing, form handling (GET and POST), and rendering of dynamic data with HTML forms, a survey, and a registration system.
 
@@ -11,7 +11,7 @@ This project showcases a simple Express.js application using routers and EJS tem
 
 ## Features
 
-###Routes
+### Routes
 - Handles multiple routes such as:
   - `/` - Main page returning shop name and product categories
   - `/about` - About page with location of other stores and managers
@@ -23,16 +23,16 @@ This project showcases a simple Express.js application using routers and EJS tem
  - `/survey` -  Survey page with a form for user details and preferred drink
  - `/surveyed` -  Shows the result of the survey form submission
  
-###Form and Validation
+### Form and Validation
 - GET and POST forms with input validation
 - Validation for input fields like Email and Age
 - Required fields are marked
 
-###Dynamic EJS integration
+### Dynamic EJS integration
 - Loop through products and store locations
 - integrate the products into the forms
 
-###styling
+### styling
 - External stylesheet to set style and format of the content
 
 ## Getting Started
