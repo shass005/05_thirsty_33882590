@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+  <head>
+    <!--set the page title dynamically with EJS-->
+    <title><%=shopName%></title>
+    <!--like to the external stylesheet-->
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <h1><%=shopName%> Shop</h1>
+    <h2>Here are some things that we sell:</h2>
+    <ul>
+      <% for(let i = 0; i < productCategories.length; i++) { %>
+        <li><%= productCategories[i] %></li>
+      <% } %><!--for loop displays all the drinks in the product category-->
+    </ul>
+    </body>
+</html>
+    </body>
+</html>

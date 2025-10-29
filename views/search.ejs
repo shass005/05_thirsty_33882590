@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+  <head>
+    <!--set the page title dynamically with EJS-->
+    <title><%=shopName%></title>
+    <!--like to the external stylesheet-->
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <h1>Welcome to <%=shopName%> Shop</h1>
+    <h2 class="searchh2">Search Page:</h2>
+    <div class="search">
+      <form action="/search_result" method="GET">
+        <label for="search_name">Name:</label>
+        <input id="search_box" type="text" name="search_text">
+
+        <label for="search_category">Category:</label>
+        <input id="search_category" type="text" name="category">
+
+        <input type="submit" value="OK" >
+      </form>
+    </div>
+  </body>
+</html>

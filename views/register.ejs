@@ -1,0 +1,20 @@
+<!doctype html> 
+<html>  
+  <head>  
+    <!--set the page title dynamically with EJS-->
+    <title><%=shopName%></title>
+    <!--like to the external stylesheet-->
+    <link rel="stylesheet" href="/styles.css">
+  </head>  
+  <body>  
+    <h1> Registeration Page </h1> 
+    <div class="registeration">
+        <form method="POST" action="/registered"> 
+            First Name:<input id="first" type="text" name="first"/><br><br> 
+            Last Name:<input id="last" type="text" name="last" /><br><br>
+            Email:<input id="email" type="email" name="email" required/> <br><br>
+            <input type="submit" value="OK" /> 
+        </form> 
+    </div>
+</body>  
+</html> 

@@ -1,0 +1,77 @@
+body{
+    background-color: grey; /*sets the background colour to grey*/
+    
+}
+
+form {
+  display: flex; /* ensure flexbox layout */
+  flex-direction: column; /* Stack children vertically */
+  width: 300px;
+}
+
+h1{
+    color: black;  /*black font*/
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: italic;
+}
+
+p{
+  color: black;  /*black font*/
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+ul{
+    list-style-type:circle;
+}
+li{
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    margin-right: 450px;
+    padding: 10px;
+    background-color: #3d3b3b; 
+    border-radius: 5px;     
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+}
+
+.survey {
+    padding: 20px;
+    margin-left: 550px;
+    background-color: #3d3b3b; 
+    border-radius: 10px;     
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); 
+    color: white;             
+    display: flex; /* ensure flexbox layout */
+    flex-direction: column;  /* Stack children vertically */ 
+    align-items: center;     /*align the div container in the center*/ 
+    width: 350px;             
+}
+.search {
+    padding: 40px;
+    margin-left: 550px;
+    background-color: #3d3b3b; 
+    border-radius: 10px;     
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); 
+    color: white;             
+    display: flex; /* ensure flexbox layout */
+    flex-direction: column;   /* Stack children vertically */
+    align-items: center;      
+    width: 350px;             
+}
+.search  input{
+    margin:5px; /*allow for spacing between the fields*/
+}
+.searchh2{
+    text-align: center; /*place the h2 element in the center of the page*/
+}
+.registeration {
+    padding: 40px;
+    margin-left: 550px;
+    background-color: #3d3b3b; 
+    border-radius: 10px;     
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); 
+    color: white;             
+    display: flex; /* ensure flexbox layout */
+    flex-direction: column;   /* Stack children vertically */
+    align-items: center;      
+    width: 350px;             
+}

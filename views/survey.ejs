@@ -1,0 +1,41 @@
+<!doctype html> 
+<html>  
+  <head>  
+    <!--set the page title dynamically with EJS-->
+    <title><%=shopName%></title>
+    <!--like to the external stylesheet-->
+    <link rel="stylesheet" href="/styles.css">
+  </head>  
+  <body>  
+    <h1> Please complete this survey: </h1> 
+    <!--div container to allow for styling the structure-->
+    <div class="survey">
+        <!-- Form element: sends POST request to /surveyed when submitted -->
+        <form method="POST" action="/surveyed"> 
+            First Name:<input id="first" type="text" name="first" required/><br><br> 
+            Last Name:<input id="last" type="text" name="last" required/><br><br>
+            Email:<input id="email" type="email" name="email" required/> <br><br><!--"Type Email" ensures proper email formatting-->
+            Age:<input id="age" type="number" name="age" required/><!--"type=number" ensures that only numbers are entered-->
+            Which of the following drinks do you consume:<br> <% for (let i = 0; i < productCategories.length; i++) { %><!--for loop displays all the drinks in the product category and allows for radio selection-->
+            <input 
+            type="radio" 
+            id="<%= productCategories[i] %>" 
+            name="drinks" 
+            value="<%= productCategories[i] %>" 
+            required
+            >
+            <label for="<%= productCategories[i] %>"><%= productCategories[i] %></label><br>
+        <% } %>
+            Are you a student:
+            <input id="student" type="checkbox" name="student"/>
+            <!--input fields for first&last names, age, email, drink preferrence and student status-->
+            <!--all fields other than student checkbox are required for form to submit-->
+            <
+            <input type="submit" value="OK" /> 
+        </form>
+    </div> 
+</body>  
+</html> 
+
+
+
